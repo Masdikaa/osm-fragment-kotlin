@@ -3,14 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MapViewFragment">
 
-    <org.osmdroid.views.MapView
-        android:id="@+id/osm_view"
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:mapbox_cameraTargetLat="-7.6298"
+        app:mapbox_cameraTargetLng="111.5232"
+        app:mapbox_cameraZoom="10"
+        app:mapbox_cameraPitch="0.0"
+        app:mapbox_cameraBearing="0.0" />
 
 </FrameLayout>

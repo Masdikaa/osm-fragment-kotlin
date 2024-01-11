@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initiate Fragment
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.frame_layout, MapViewFragment()).commit()
+        //Initiate Fragment
+        supportFragmentManager.beginTransaction().replace(R.id.frame_layout, MapViewFragment())
+            .commit()
     }
 }
